@@ -13,10 +13,23 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate API intake submission
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 500);
+    
+    // Format the message for WhatsApp (clean text design for 100% compatibility)
+    const message = `[New Project Request]
+
+- Name: ${formData.name}
+- Email: ${formData.email}
+- Service: ${formData.service}
+- Budget: ${formData.budget}
+
+Requirements:
+${formData.details}`;
+
+    // Redirect to WhatsApp
+    const whatsappUrl = `https://wa.me/8801752350135?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+
+    setSubmitted(true);
   };
 
   const services = [

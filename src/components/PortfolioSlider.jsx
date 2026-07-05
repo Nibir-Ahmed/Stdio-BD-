@@ -13,41 +13,85 @@ import { FiExternalLink, FiEye } from 'react-icons/fi';
 const PortfolioSlider = () => {
   const projects = [
     {
-      title: 'Furniro Furniture Store',
-      category: 'E-Commerce Platform',
+      title: 'Furnito Furniture',
+      category: 'E-Commerce',
       image: '/assets/furniro.png',
-      tech: ['React', 'Tailwind', 'Redux'],
+      description: 'A client-facing React application deployed on Vercel with component-based UI, responsive views, and polished frontend flow.',
+      tech: ['React.js', 'Vercel', 'CSS'],
+      link: 'https://fitarsiam377.github.io/furniro-e-commerce-website-/'
     },
     {
-      title: 'FloraFit Health App',
-      category: 'Web Application',
-      image: '/assets/florafit.png',
-      tech: ['Next.js', 'ChartJS', 'Firebase'],
+      title: 'BUBT academia',
+      category: 'Educational',
+      image: '/assets/academia.png',
+      description: 'A Figma-inspired UI implementation converted into responsive HTML, Tailwind CSS, and JavaScript sections.',
+      tech: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript', 'Figma'],
+      link: 'https://fitarsiam377.github.io/BUBT-Academia-Project-Prototype-/'
     },
     {
-      title: 'Admin Control Center',
-      category: 'SaaS Dashboard',
-      image: '/assets/admindashboard.png',
-      tech: ['React', 'Tailwind v4', 'Node.js'],
-    },
-    {
-      title: 'Mega E-Commerce Hub',
-      category: 'Online Commerce',
-      image: '/assets/e commerce.png',
-      tech: ['Vite', 'Tailwind', 'Stripe'],
-    },
-    {
-      title: 'Apex Conversion Landing',
+      title: 'CyberGuard',
       category: 'Landing Page',
-      image: '/assets/landingpage.png',
-      tech: ['Figma to HTML', 'CSS3', 'JS'],
+      image: '/assets/cyber.png',
+      description: 'A modern, high-conversion landing page focused on security products, featuring clean animations and a sleek dark theme.',
+      tech: ['HTML5', 'CSS3', 'Tailwind CSS'],
+      link: 'https://resplendent-sawine-828781.netlify.app/'
     },
     {
-      title: 'Siam Developer Portfolio',
-      category: 'Creative Website',
-      image: '/assets/siamport.png',
-      tech: ['React', 'Framer Motion'],
+      title: 'ÈLVORA',
+      category: 'E-Commerce',
+      image: '/assets/elvora.png',
+      description: 'A premium clothing e-commerce interface showcasing elegant product cards, smooth hover states, and intuitive cart flow.',
+      tech: ['HTML5', 'CSS3', 'JavaScript'],
+      link: 'https://elvora-bd.vercel.app/'
     },
+    {
+      title: 'Mans Premium apperience',
+      category: 'E-Commerce',
+      image: '/assets/men-premium.png',
+      description: 'A clean footwear brand website with responsive product sections, stylish visual presentation, and simple conversion-focused layout.',
+      tech: ['HTML5', 'CSS3', 'Bootstrap'],
+      link: 'https://florafit.netlify.app/'
+    },
+    {
+      title: 'Homeland',
+      category: 'Business',
+      image: '/assets/Homaland.png',
+      description: 'A real estate business website designed to present property listings, trusted service details, and lead-focused contact actions.',
+      tech: ['HTML5', 'CSS3', 'Tailwind', 'js'],
+      link: 'https://homeland-sigma.vercel.app/'
+    },
+    {
+      title: 'Portfolio Website',
+      category: 'Portfolio',
+      image: '/assets/portfoliosiam.png',
+      description: 'A personal developer portfolio showcasing skills, project work, contact details, and a polished responsive presentation.',
+      tech: ['HTML5', 'CSS3', 'Bootstrap'],
+      link: 'https://fitarsiamportfolio.netlify.app/'
+    },
+    {
+      title: 'NuriGlow Store BD',
+      category: 'E-Commerce',
+      image: '/assets/Screenshot 2026-07-06 at 12.11.18 AM.png',
+      description: 'A dedicated beauty and skincare storefront featuring crisp product imagery, clear calls-to-action, and easy navigation.',
+      tech: ['HTML5', 'CSS3', 'React'],
+      link: 'https://nuriglow-store-bd.web.app/'
+    },
+    {
+      title: 'InnovateEd',
+      category: 'Educational',
+      image: '/assets/innovate.png',
+      description: 'A modern education platform interface with React, Redux state flow, responsive Tailwind styling, and structured learning content.',
+      tech: ['React.js', 'Redux', 'Tailwind CSS'],
+      link: 'https://innavated.web.app/'
+    },
+    {
+      title: 'Bigspring Business Platform',
+      category: 'Business',
+      image: '/assets/bigspring.png',
+      description: 'A corporate web presence that balances professional branding with accessible layout structures and performance.',
+      tech: ['Next.js', 'Tailwind CSS', 'Vercel'],
+      link: 'https://lucent-biscuit-173f0a.netlify.app/'
+    }
   ];
 
   return (
@@ -127,14 +171,9 @@ const PortfolioSlider = () => {
                 {/* Hover Reveal Actions */}
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
                   <a
-                    href="#"
-                    className="p-2 bg-dark-bg/85 backdrop-blur-md rounded-lg text-white hover:text-neon-green border border-white/10 hover:border-neon-green/30 shadow-md transition-all duration-300"
-                    title="View details"
-                  >
-                    <FiEye className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="#"
+                    href={proj.link || '#'}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-2 bg-dark-bg/85 backdrop-blur-md rounded-lg text-white hover:text-neon-green border border-white/10 hover:border-neon-green/30 shadow-md transition-all duration-300"
                     title="Live preview"
                   >
