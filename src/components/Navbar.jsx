@@ -75,23 +75,27 @@ const Navbar = () => {
             })}
           </ul>
 
-          <Link
-            to="/contact"
+          <a
+            href="https://www.linkedin.com/in/stdio-bd/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-primary-green hover:bg-neon-green text-dark-bg text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-md transition-all duration-300 shadow-md hover:shadow-green-500/20 border border-primary-green hover:border-neon-green glow-green-sm"
           >
-            <span>Intake</span>
+            <span>Let's Go</span>
             <FiSend className="w-3.5 h-3.5" />
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle Menu */}
         <div className="md:hidden flex items-center gap-4">
-          <Link
-            to="/contact"
+          <a
+            href="https://www.linkedin.com/in/stdio-bd/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-primary-green hover:bg-neon-green text-dark-bg text-xs font-bold px-4 py-2 rounded-md transition-colors duration-300"
           >
-            Intake
-          </Link>
+            Let's Go
+          </a>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-white hover:text-neon-green transition-colors duration-300 focus:outline-none"

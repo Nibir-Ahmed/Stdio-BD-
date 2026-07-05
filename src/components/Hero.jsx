@@ -4,23 +4,13 @@ import { FiArrowRight, FiTerminal, FiCode, FiLayers, FiSmartphone } from 'react-
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [terminalStep, setTerminalStep] = useState(0);
-
-  // Mouse move listener for premium glow trail
-  const handleMouseMove = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setMousePos({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    });
-  };
 
   // Mock terminal typing simulation
   useEffect(() => {
     const timer = setInterval(() => {
       setTerminalStep((prev) => (prev < 5 ? prev + 1 : 0));
-    }, 3500);
+    }, 2000);
     return () => clearInterval(timer);
   }, []);
 
@@ -35,16 +25,9 @@ const Hero = () => {
 
   return (
     <section
-      onMouseMove={handleMouseMove}
       className="relative min-h-[95vh] flex items-center justify-center pt-28 pb-16 overflow-hidden circuit-bg"
     >
-      {/* Interactive cursor light tracker */}
-      <div
-        className="absolute inset-0 pointer-events-none hidden md:block transition-all duration-200"
-        style={{
-          background: `radial-gradient(400px circle at ${mousePos.x}px ${mousePos.y}px, rgba(52, 211, 153, 0.03), rgba(244, 63, 94, 0.01), transparent 70%)`,
-        }}
-      />
+
 
       {/* Floating glowing orbs */}
       <div className="absolute top-1/4 left-10 w-96 h-96 bg-neon-green/5 rounded-full filter blur-[100px] pointer-events-none" />

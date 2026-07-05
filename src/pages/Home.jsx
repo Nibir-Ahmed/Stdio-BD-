@@ -66,24 +66,11 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="glassmorphism-card p-6 rounded-2xl flex flex-col justify-between h-44 translate-y-8 border-neon-green/10">
+            <div className="glassmorphism-card p-6 rounded-2xl flex flex-col justify-between h-44 border-neon-green/10">
               <FiTrendingUp className="w-8 h-8 text-neon-green" />
               <div>
                 <h3 className="text-2xl font-bold text-white">99%</h3>
                 <p className="text-xs text-white/50 tracking-wide uppercase mt-1">Client Satisfaction</p>
-              </div>
-            </div>
-            
-            <div className="col-span-2 glassmorphism-card p-6 rounded-2xl flex items-center gap-6 mt-4 border-white/5">
-              <img
-                src="/assets/rimon.png"
-                alt="Stdio BD Developer"
-                className="w-12 h-12 rounded-full object-cover border border-white/10"
-                onError={(e) => { e.target.src = "https://placehold.co/100x100/ffffff/1a1a1a?text=DEV"; }}
-              />
-              <div className="text-left">
-                <h4 className="text-sm font-bold text-white">Premium Quality Assurance</h4>
-                <p className="text-xs text-white/40">Custom-coded frameworks. No bloated template builders.</p>
               </div>
             </div>
           </div>

@@ -1,53 +1,91 @@
 import React, { useState } from 'react';
-import { FiEye, FiExternalLink } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
 
-  const categories = ['All', 'Web App', 'E-Commerce', 'Landing Page', 'UI/UX'];
+  const categories = ['All', 'Business', 'E-Commerce', 'Landing Page', 'Portfolio', 'Educational'];
 
   const projects = [
     {
-      title: 'Furniro Furniture Store',
+      title: 'Furnito Furniture',
       category: 'E-Commerce',
       image: '/assets/furniro.png',
-      description: 'Sophisticated interior wood furniture store UI with rich search filters and card systems.',
-      tech: ['React.js', 'Redux', 'Tailwind CSS']
+      description: 'A client-facing React application deployed on Vercel with component-based UI, responsive views, and polished frontend flow.',
+      tech: ['React.js', 'Vercel', 'CSS'],
+      link: 'https://fitarsiam377.github.io/furniro-e-commerce-website-/'
     },
     {
-      title: 'FloraFit Wellness Tracker',
-      category: 'Web App',
-      image: '/assets/florafit.png',
-      description: 'Modern healthcare portal providing calories index calculations and diet layout guides.',
-      tech: ['Next.js', 'ChartJS', 'Firebase']
+      title: 'BUBT academia',
+      category: 'Educational',
+      image: '/assets/academia.png',
+      description: 'A Figma-inspired UI implementation converted into responsive HTML, Tailwind CSS, and JavaScript sections.',
+      tech: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript', 'Figma'],
+      link: 'https://fitarsiam377.github.io/BUBT-Academia-Project-Prototype-/'
     },
     {
-      title: 'Admin analytical panel',
-      category: 'Web App',
-      image: '/assets/admindashboard.png',
-      description: 'Analytical dashboards built with glowing light grids, responsive data tables, and metrics.',
-      tech: ['Vite', 'Tailwind v4', 'ApexCharts']
+      title: 'CyberGuard',
+      category: 'Business',
+      image: '/assets/cyber.png',
+      description: 'A fast Next.js website with modern page composition, reusable sections, and production-ready responsive layout.',
+      tech: ['Next.js', 'React.js', 'CSS'],
+      link: 'https://resplendent-sawine-828781.netlify.app/'
     },
     {
-      title: 'E-Commerce Visual Hub',
+      title: 'ÈLVORA',
       category: 'E-Commerce',
-      image: '/assets/e commerce.png',
-      description: 'Comprehensive digital storefront with modern payment gateways and user checkouts.',
-      tech: ['React.js', 'Stripe', 'Node.js']
+      image: '/assets/elvora.png',
+      description: 'A client-facing React application deployed on Vercel with component-based UI, responsive views, and polished frontend flow.',
+      tech: ['React.js', 'Vercel', 'CSS'],
+      link: 'https://elvora-bd.vercel.app/'
     },
     {
-      title: 'Apex Conversion Landing',
-      category: 'Landing Page',
-      image: '/assets/landingpage.png',
-      description: 'Single page digital marketing layout optimized for SEO and conversion metrics.',
-      tech: ['HTML5', 'CSS3', 'JavaScript']
+      title: 'Mans Premium apperience',
+      category: 'E-Commerce',
+      image: '/assets/men-premium.png',
+      description: 'A clean footwear brand website with responsive product sections, stylish visual presentation, and simple conversion-focused layout.',
+      tech: ['HTML5', 'CSS3', 'Bootstrap'],
+      link: 'https://florafit.netlify.app/'
     },
     {
-      title: 'Siam Developer Portfolio',
-      category: 'UI/UX',
-      image: '/assets/siamport.png',
-      description: 'Framer Motion presentation highlighting creative digital works and code blocks.',
-      tech: ['React.js', 'Framer Motion', 'Figma']
+      title: 'Homeland',
+      category: 'Business',
+      image: '/assets/Homaland.png',
+      description: 'A real estate business website designed to present property listings, trusted service details, and lead-focused contact actions.',
+      tech: ['HTML5', 'CSS3', 'Tailwind', 'js'],
+      link: 'https://homeland-sigma.vercel.app/'
+    },
+    {
+      title: 'Portfolio Website',
+      category: 'Portfolio',
+      image: '/assets/portfoliosiam.png',
+      description: 'A personal developer portfolio showcasing skills, project work, contact details, and a polished responsive presentation.',
+      tech: ['HTML5', 'CSS3', 'Bootstrap'],
+      link: 'https://fitarsiamportfolio.netlify.app/'
+    },
+    {
+      title: 'NuriGlow Store BD',
+      category: 'E-Commerce',
+      image: '/assets/Screenshot 2026-07-06 at 12.11.18 AM.png',
+      description: 'A React-powered online store for beauty and skincare products with product browsing, storefront UI, and shopping-focused flow.',
+      tech: ['React.js', 'Firebase', 'CSS'],
+      link: 'https://nuriglow-store-bd.web.app/'
+    },
+    {
+      title: 'InnovateEd',
+      category: 'Educational',
+      image: '/assets/innovate.png',
+      description: 'A modern education platform interface with React, Redux state flow, responsive Tailwind styling, and structured learning content.',
+      tech: ['React.js', 'Redux', 'Tailwind CSS'],
+      link: 'https://innavated.web.app/'
+    },
+    {
+      title: 'Bigspring Business Platform',
+      category: 'Business',
+      image: '/assets/bigspring.png',
+      description: 'A Next.js business platform built for corporate presentation, service storytelling, and polished marketing page performance.',
+      tech: ['Next.js', 'Tailwind CSS'],
+      link: 'https://lucent-biscuit-173f0a.netlify.app/'
     }
   ];
 
@@ -112,24 +150,6 @@ const Projects = () => {
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/20 to-transparent opacity-80" />
-                
-                {/* Actions Hover Overlays */}
-                <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity z-20">
-                  <a
-                    href="#"
-                    className="p-2 bg-dark-bg/85 backdrop-blur-md rounded-lg text-white hover:text-neon-green border border-white/10 hover:border-neon-green/30 transition-colors"
-                    title="Quick look"
-                  >
-                    <FiEye className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-2 bg-dark-bg/85 backdrop-blur-md rounded-lg text-white hover:text-neon-green border border-white/10 hover:border-neon-green/30 transition-colors"
-                    title="Live preview"
-                  >
-                    <FiExternalLink className="w-4 h-4" />
-                  </a>
-                </div>
               </div>
 
               {/* Text Area */}
@@ -146,15 +166,28 @@ const Projects = () => {
                   </p>
                 </div>
 
-                <div className="border-t border-white/5 pt-4 flex flex-wrap gap-1.5">
-                  {proj.tech.map((tag, tIdx) => (
-                    <span
-                      key={tIdx}
-                      className="text-[9px] font-mono text-white/60 bg-white/5 border border-white/5 px-2 py-0.5 rounded-full"
+                <div className="border-t border-white/5 pt-4 flex items-center justify-between">
+                  <div className="flex flex-wrap gap-1.5">
+                    {proj.tech.map((tag, tIdx) => (
+                      <span
+                        key={tIdx}
+                        className="text-[9px] font-mono text-white/60 bg-white/5 border border-white/5 px-2 py-0.5 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  {proj.link && proj.link !== '#' && (
+                    <a
+                      href={proj.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 bg-neon-green/10 text-neon-green border border-neon-green/20 hover:bg-neon-green hover:text-dark-bg text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-md transition-all ml-3 shrink-0"
                     >
-                      {tag}
-                    </span>
-                  ))}
+                      <span>Live</span>
+                      <FiExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
