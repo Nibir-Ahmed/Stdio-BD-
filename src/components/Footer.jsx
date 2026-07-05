@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiMail, FiPhone, FiMapPin, FiTwitter, FiLinkedin, FiInstagram, FiGithub } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { FaFacebookF, FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -35,7 +36,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-white/60 hover:text-neon-green text-sm transition-colors duration-300">
                 <FiMail className="text-neon-green w-4 h-4" />
-                <span>fitarsiam@gmail.com</span>
+                <span>stdiobd@gmail.com</span>
               </div>
             </div>
           </div>
@@ -92,19 +93,15 @@ const Footer = () => {
               </button>
             </div>
             
-            {/* Social Icons */}
             <div className="flex gap-4 mt-6">
-              <a href="#" className="p-2 bg-white/5 hover:bg-neon-green/10 text-white/60 hover:text-neon-green rounded-lg border border-white/10 hover:border-neon-green/30 transition-all">
-                <FiTwitter className="w-4 h-4" />
+              <a href="https://www.facebook.com/profile.php?id=61591081688600" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 hover:bg-neon-green/10 text-white/60 hover:text-neon-green rounded-lg border border-white/10 hover:border-neon-green/30 transition-all">
+                <FaFacebookF className="w-4 h-4" />
               </a>
-              <a href="#" className="p-2 bg-white/5 hover:bg-neon-green/10 text-white/60 hover:text-neon-green rounded-lg border border-white/10 hover:border-neon-green/30 transition-all">
-                <FiLinkedin className="w-4 h-4" />
+              <a href="https://wa.me/8801752350135" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 hover:bg-neon-green/10 text-white/60 hover:text-neon-green rounded-lg border border-white/10 hover:border-neon-green/30 transition-all">
+                <FaWhatsapp className="w-4 h-4" />
               </a>
-              <a href="#" className="p-2 bg-white/5 hover:bg-neon-green/10 text-white/60 hover:text-neon-green rounded-lg border border-white/10 hover:border-neon-green/30 transition-all">
-                <FiInstagram className="w-4 h-4" />
-              </a>
-              <a href="#" className="p-2 bg-white/5 hover:bg-neon-green/10 text-white/60 hover:text-neon-green rounded-lg border border-white/10 hover:border-neon-green/30 transition-all">
-                <FiGithub className="w-4 h-4" />
+              <a href="https://www.linkedin.com/in/stdio-bd/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 hover:bg-neon-green/10 text-white/60 hover:text-neon-green rounded-lg border border-white/10 hover:border-neon-green/30 transition-all">
+                <FaLinkedinIn className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -121,7 +118,7 @@ const Footer = () => {
             <span>•</span>
             <a href="#" className="hover:text-neon-green transition-colors">Terms of Service</a>
             <span>•</span>
-            <span className="text-white/50">Developed by Al Fitar Ahmed</span>
+            <span className="text-white/50">Developed by StdioBD</span>
           </div>
         </div>
 

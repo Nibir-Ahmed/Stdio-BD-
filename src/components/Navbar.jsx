@@ -147,7 +147,7 @@ const Navbar = () => {
           <div className="flex justify-center gap-6 text-white/50 text-sm">
             <span>Dhaka, Bangladesh</span>
             <span>•</span>
-            <span>fitarsiam@gmail.com</span>
+            <span>stdiobd@gmail.com</span>
           </div>
         </div>
       </div>

@@ -105,7 +105,7 @@ ${formData.details}`;
                   </div>
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-wider text-white/40 mb-1">Email Inquiry</h4>
-                    <p className="text-sm text-white font-semibold">fitarsiam@gmail.com</p>
+                    <p className="text-sm text-white font-semibold">stdiobd@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -149,7 +149,7 @@ ${formData.details}`;
                     <input
                       type="text"
                       required
-                      placeholder="e.g. John Doe"
+                      placeholder="e.g. Stdio BD"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-neon-green transition-all"
@@ -162,7 +162,7 @@ ${formData.details}`;
                     <input
                       type="email"
                       required
-                      placeholder="e.g. john@example.com"
+                      placeholder="e.g. Stdiobd@gmail.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-neon-green transition-all"
