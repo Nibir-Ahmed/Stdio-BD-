@@ -61,7 +61,7 @@ const Home = () => {
             <div className="glassmorphism-card p-6 rounded-2xl flex flex-col justify-between h-44 border-neon-green/20">
               <FiBriefcase className="w-8 h-8 text-neon-green" />
               <div>
-                <h3 className="text-2xl font-bold text-white">40+</h3>
+                <h3 className="text-2xl font-bold text-white">10+</h3>
                 <p className="text-xs text-white/50 tracking-wide uppercase mt-1">Websites Delivered</p>
               </div>
             </div>
